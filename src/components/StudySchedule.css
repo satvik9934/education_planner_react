@@ -1,0 +1,86 @@
+/* StudySchedule.css */
+
+.study-schedule {
+  margin-top: 20px;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.subject-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.subject-item:hover {
+  transform: scale(1.03);
+}
+
+.subject-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.original-hours,
+.amended-hours,
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.original-hours,
+.amended-hours {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.actions button {
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 5px; /* Adjusted spacing */
+}
+
+.actions button:last-child {
+  margin-right: 0; /* No margin for the last button */
+}
+
+.actions button:hover {
+  background-color: #27ae60;
+}
+
+.remove-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 5px; /* Adjusted spacing */
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
